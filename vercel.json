@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "if [ ! -d flutter ]; then git clone https://github.com/flutter/flutter.git -b stable --depth 1 flutter; fi; export PATH=\"$PATH:$PWD/flutter/bin\"; flutter --version; flutter build web --release --web-renderer canvaskit",
+  "buildCommand": "if [ ! -d flutter ]; then git clone https://github.com/flutter/flutter.git -b stable --depth 1 flutter; fi; export PATH=\"$PATH:$PWD/flutter/bin\"; flutter --version; flutter build web --release",
   "outputDirectory": "build/web",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
